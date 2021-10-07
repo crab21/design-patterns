@@ -1,0 +1,132 @@
+"".main STEXT size=307 args=0x0 locals=0x88 funcid=0x0
+	0x0000 00000 (main.go:5)	TEXT	"".main(SB), ABIInternal, $136-0
+	0x0000 00000 (main.go:5)	LEAQ	-8(SP), R12
+	0x0005 00005 (main.go:5)	CMPQ	R12, 16(R14)
+	0x0009 00009 (main.go:5)	PCDATA	$0, $-2
+	0x0009 00009 (main.go:5)	JLS	297
+	0x000f 00015 (main.go:5)	PCDATA	$0, $-1
+	0x000f 00015 (main.go:5)	SUBQ	$136, SP
+	0x0016 00022 (main.go:5)	MOVQ	BP, 128(SP)
+	0x001e 00030 (main.go:5)	LEAQ	128(SP), BP
+	0x0026 00038 (main.go:5)	FUNCDATA	$0, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0026 00038 (main.go:5)	FUNCDATA	$1, gclocals·6e7c9f3c45c01365ed2372585f4ac9ea(SB)
+	0x0026 00038 (main.go:5)	FUNCDATA	$2, "".main.stkobj(SB)
+	0x0026 00038 (main.go:6)	MOVQ	$1, "".a+32(SP)
+	0x002f 00047 (main.go:6)	MOVQ	$2, "".b+24(SP)
+	0x0038 00056 (main.go:7)	MOVQ	"".a+32(SP), CX
+	0x003d 00061 (main.go:7)	MOVQ	CX, ""..autotmp_3+40(SP)
+	0x0042 00066 (main.go:7)	MOVQ	"".b+24(SP), CX
+	0x0047 00071 (main.go:7)	MOVQ	CX, "".a+32(SP)
+	0x004c 00076 (main.go:7)	MOVQ	""..autotmp_3+40(SP), CX
+	0x0051 00081 (main.go:7)	MOVQ	CX, "".b+24(SP)
+	0x0056 00086 (main.go:8)	LEAQ	""..autotmp_2+96(SP), CX
+	0x005b 00091 (main.go:8)	MOVUPS	X15, (CX)
+	0x005f 00095 (main.go:8)	LEAQ	""..autotmp_2+112(SP), CX
+	0x0064 00100 (main.go:8)	MOVUPS	X15, (CX)
+	0x0068 00104 (main.go:8)	LEAQ	""..autotmp_2+96(SP), CX
+	0x006d 00109 (main.go:8)	MOVQ	CX, ""..autotmp_5+64(SP)
+	0x0072 00114 (main.go:8)	MOVQ	"".a+32(SP), AX
+	0x0077 00119 (main.go:8)	PCDATA	$1, $1
+	0x0077 00119 (main.go:8)	CALL	runtime.convT64(SB)
+	0x007c 00124 (main.go:8)	MOVQ	AX, ""..autotmp_6+56(SP)
+	0x0081 00129 (main.go:8)	MOVQ	""..autotmp_5+64(SP), CX
+	0x0086 00134 (main.go:8)	TESTB	AL, (CX)
+	0x0088 00136 (main.go:8)	LEAQ	type.int(SB), DX
+	0x008f 00143 (main.go:8)	MOVQ	DX, (CX)
+	0x0092 00146 (main.go:8)	LEAQ	8(CX), DI
+	0x0096 00150 (main.go:8)	PCDATA	$0, $-2
+	0x0096 00150 (main.go:8)	CMPL	runtime.writeBarrier(SB), $0
+	0x009d 00157 (main.go:8)	JEQ	162
+	0x009f 00159 (main.go:8)	NOP
+	0x00a0 00160 (main.go:8)	JMP	168
+	0x00a2 00162 (main.go:8)	MOVQ	AX, 8(CX)
+	0x00a6 00166 (main.go:8)	JMP	175
+	0x00a8 00168 (main.go:8)	CALL	runtime.gcWriteBarrier(SB)
+	0x00ad 00173 (main.go:8)	JMP	175
+	0x00af 00175 (main.go:8)	PCDATA	$0, $-1
+	0x00af 00175 (main.go:8)	MOVQ	"".b+24(SP), AX
+	0x00b4 00180 (main.go:8)	CALL	runtime.convT64(SB)
+	0x00b9 00185 (main.go:8)	MOVQ	AX, ""..autotmp_7+48(SP)
+	0x00be 00190 (main.go:8)	MOVQ	""..autotmp_5+64(SP), CX
+	0x00c3 00195 (main.go:8)	TESTB	AL, (CX)
+	0x00c5 00197 (main.go:8)	LEAQ	type.int(SB), DX
+	0x00cc 00204 (main.go:8)	MOVQ	DX, 16(CX)
+	0x00d0 00208 (main.go:8)	LEAQ	24(CX), DI
+	0x00d4 00212 (main.go:8)	PCDATA	$0, $-2
+	0x00d4 00212 (main.go:8)	CMPL	runtime.writeBarrier(SB), $0
+	0x00db 00219 (main.go:8)	JEQ	223
+	0x00dd 00221 (main.go:8)	JMP	229
+	0x00df 00223 (main.go:8)	MOVQ	AX, 24(CX)
+	0x00e3 00227 (main.go:8)	JMP	236
+	0x00e5 00229 (main.go:8)	CALL	runtime.gcWriteBarrier(SB)
+	0x00ea 00234 (main.go:8)	JMP	236
+	0x00ec 00236 (main.go:8)	PCDATA	$0, $-1
+	0x00ec 00236 (main.go:8)	MOVQ	""..autotmp_5+64(SP), AX
+	0x00f1 00241 (main.go:8)	TESTB	AL, (AX)
+	0x00f3 00243 (main.go:8)	JMP	245
+	0x00f5 00245 (main.go:8)	MOVQ	AX, ""..autotmp_4+72(SP)
+	0x00fa 00250 (main.go:8)	MOVQ	$2, ""..autotmp_4+80(SP)
+	0x0103 00259 (main.go:8)	MOVQ	$2, ""..autotmp_4+88(SP)
+	0x010c 00268 (main.go:8)	MOVL	$2, BX
+	0x0111 00273 (main.go:8)	MOVQ	BX, CX
+	0x0114 00276 (main.go:8)	PCDATA	$1, $0
+	0x0114 00276 (main.go:8)	CALL	fmt.Println(SB)
+	0x0119 00281 (main.go:9)	MOVQ	128(SP), BP
+	0x0121 00289 (main.go:9)	ADDQ	$136, SP
+	0x0128 00296 (main.go:9)	RET
+	0x0129 00297 (main.go:9)	NOP
+	0x0129 00297 (main.go:5)	PCDATA	$1, $-1
+	0x0129 00297 (main.go:5)	PCDATA	$0, $-2
+	0x0129 00297 (main.go:5)	CALL	runtime.morestack_noctxt(SB)
+	0x012e 00302 (main.go:5)	PCDATA	$0, $-1
+	0x012e 00302 (main.go:5)	JMP	0
+	0x0000 4c 8d 64 24 f8 4d 3b 66 10 0f 86 1a 01 00 00 48  L.d$.M;f.......H
+	0x0010 81 ec 88 00 00 00 48 89 ac 24 80 00 00 00 48 8d  ......H..$....H.
+	0x0020 ac 24 80 00 00 00 48 c7 44 24 20 01 00 00 00 48  .$....H.D$ ....H
+	0x0030 c7 44 24 18 02 00 00 00 48 8b 4c 24 20 48 89 4c  .D$.....H.L$ H.L
+	0x0040 24 28 48 8b 4c 24 18 48 89 4c 24 20 48 8b 4c 24  $(H.L$.H.L$ H.L$
+	0x0050 28 48 89 4c 24 18 48 8d 4c 24 60 44 0f 11 39 48  (H.L$.H.L$`D..9H
+	0x0060 8d 4c 24 70 44 0f 11 39 48 8d 4c 24 60 48 89 4c  .L$pD..9H.L$`H.L
+	0x0070 24 40 48 8b 44 24 20 e8 00 00 00 00 48 89 44 24  $@H.D$ .....H.D$
+	0x0080 38 48 8b 4c 24 40 84 01 48 8d 15 00 00 00 00 48  8H.L$@..H......H
+	0x0090 89 11 48 8d 79 08 83 3d 00 00 00 00 00 74 03 90  ..H.y..=.....t..
+	0x00a0 eb 06 48 89 41 08 eb 07 e8 00 00 00 00 eb 00 48  ..H.A..........H
+	0x00b0 8b 44 24 18 e8 00 00 00 00 48 89 44 24 30 48 8b  .D$......H.D$0H.
+	0x00c0 4c 24 40 84 01 48 8d 15 00 00 00 00 48 89 51 10  L$@..H......H.Q.
+	0x00d0 48 8d 79 18 83 3d 00 00 00 00 00 74 02 eb 06 48  H.y..=.....t...H
+	0x00e0 89 41 18 eb 07 e8 00 00 00 00 eb 00 48 8b 44 24  .A..........H.D$
+	0x00f0 40 84 00 eb 00 48 89 44 24 48 48 c7 44 24 50 02  @....H.D$HH.D$P.
+	0x0100 00 00 00 48 c7 44 24 58 02 00 00 00 bb 02 00 00  ...H.D$X........
+	0x0110 00 48 89 d9 e8 00 00 00 00 48 8b ac 24 80 00 00  .H.......H..$...
+	0x0120 00 48 81 c4 88 00 00 00 c3 e8 00 00 00 00 e9 cd  .H..............
+	0x0130 fe ff ff                                         ...
+	rel 3+0 t=24 type.int+0
+	rel 3+0 t=24 type.int+0
+	rel 120+4 t=7 runtime.convT64+0
+	rel 139+4 t=15 type.int+0
+	rel 152+4 t=15 runtime.writeBarrier+-1
+	rel 169+4 t=7 runtime.gcWriteBarrier+0
+	rel 181+4 t=7 runtime.convT64+0
+	rel 200+4 t=15 type.int+0
+	rel 214+4 t=15 runtime.writeBarrier+-1
+	rel 230+4 t=7 runtime.gcWriteBarrier+0
+	rel 277+4 t=7 fmt.Println+0
+	rel 298+4 t=7 runtime.morestack_noctxt+0
+go.cuinfo.packagename. SDWARFCUINFO dupok size=0
+	0x0000 69 6e 74 65 72 6e 61 6c                          internal
+""..inittask SNOPTRDATA size=32
+	0x0000 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 24+8 t=1 fmt..inittask+0
+runtime.gcbits.0a SRODATA dupok size=1
+	0x0000 0a                                               .
+type..importpath.fmt. SRODATA dupok size=5
+	0x0000 00 03 66 6d 74                                   ..fmt
+gclocals·69c1753bd5f81501d95132d08af04464 SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+gclocals·6e7c9f3c45c01365ed2372585f4ac9ea SRODATA dupok size=12
+	0x0000 02 00 00 00 0a 00 00 00 00 00 04 00              ............
+"".main.stkobj SRODATA static size=32
+	0x0000 01 00 00 00 00 00 00 00 e0 ff ff ff 20 00 00 00  ............ ...
+	0x0010 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ...............
+	rel 24+8 t=1 runtime.gcbits.0a+0
